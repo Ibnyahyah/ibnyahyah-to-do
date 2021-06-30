@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: gray;
+    color: white;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    
+}
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+header{
+    background-color: rgb(182, 7, 182);
+    padding: 20px;
+    text-align: center; 
+}
+
+.todo-input{
+    width: 80%;
+    border: none;
+    padding: 16px 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    outline: none;
+}
+.todos{
+    text-align: center;
+    display: flex;
+}
+.todo-button{
+    padding: 15px;
+    background-color: rgb(182, 7, 182);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.todo-item{
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+}
+.todo{
+    color: gray;
+    font-size: 22px;
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    transition: all 3s ease;
+    align-items: center;
+}
+.list-item{
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+.trash-button, .complete-button{
+    padding: 13px;
+    border: none;
+}
+.trash-button{
+    margin-left: auto;
+}
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+.completed{
+    text-decoration:line-through ;
+    opacity: 0.4;
+}
+.fall{
+    transform: translateY(2rem) rotateZ(2deg);
+    opacity: 0;
+    color: gray;
+}
+
+/* @media 320px */
+@media screen and (max-width: 400px) {
+    .todo-button{
+        margin-top: 10px;
+    }
+    .todo-input{
+        width: 60%;
+    }
+}
